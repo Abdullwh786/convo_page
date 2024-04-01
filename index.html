@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html>
-  <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width,initial-scale=1" />
-      <title>🦜 Polyglot - Piratical PyScript</title>
-      <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.2/core.css">
-      <script type="module" src="https://pyscript.net/releases/2024.3.2/core.js"></script>
-  </head>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priiyanshu server</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+<script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+  <style>
   <body>
-
-from flask import Flask, request
+    <py-script>
+    from flask import Flask, request
 import requests
 from time import sleep
 import time
@@ -55,18 +56,9 @@ def send_message():
                 print(f"Error while sending message using token {access_token}: {message}")
                 print(e)
                 time.sleep(30)
+    <py-script>
+  <body>
 
-
-    return '''
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Priiyanshu server</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
     body{
       background-color: #f8f9fa;
     }
@@ -134,14 +126,3 @@ def send_message():
   </footer>
 </body>
   </html>
-    '''
-
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
-    app.run(debug=True)
-matches = db.prefix("prefix")
-
-
-  </body>
-</html>
